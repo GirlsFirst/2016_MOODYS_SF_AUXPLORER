@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title> home/feed </title>
+    <center><h1>Profile</h1></center>
+    </head>
+    
+    <body>
+    
+    <form name="reg" action="code_exec.php" onsubmit="return validateForm()" method="post">
+<table width="274" border="0" align="center" cellpadding="2" cellspacing="0">
+  <tr>
+    <td colspan="2">
+		<div align="center">
+		  <?php 
+		$remarks=$_GET['remarks'];
+		if ($remarks==null and $remarks=="")
+		{
+		echo 'Register Here';
+		}
+		if ($remarks=='success')
+		{
+		echo 'Registration Success';
+		}
+		?>	
+	    </div></td>
+  </tr>
+  <tr>
+    <td width="95"><div align="right">First Name:</div></td>
+    <td width="171"><input type="text" name="fname" /></td>
+  </tr>
+  <tr>
+    <td><div align="right">Last Name:</div></td>
+    <td><input type="text" name="lname" /></td>
+  </tr>
+ <tr>
+    <td><div align="right">Username:</div></td>
+    <td><input type="text" name="username" /></td>
+  </tr>
+ <tr>
+    <td><div align="right">Password:</div></td>
+    <td><input type="text" name="password" /></td>
+  </tr>
+  <tr>
+    <td><div align="right"></div></td>
+    <td><input name="submit" type="submit" value="Submit" /></td>
+  </tr>
+</table>
+</form>
+    <?php
+$mysql_hostname = "localhost";
+$mysql_user = "root";
+$mysql_password = "";
+$mysql_database = "registration";
+$prefix = "";
+$bd = mysql_connect($mysql_hostname, $mysql_user, $mysql_password) or die("Could not connect database");
+mysql_select_db($mysql_database, $bd) or die("Could not select database");
+
+require_once('connection.php');
+$id=$_SESSION['SESS_MEMBER_ID'];
+$result3 = mysql_query("SELECT * FROM member where mem_id='$id'");
+while($row3 = mysql_fetch_array($result3))
+{ 
+$fname=$row3['fname'];
+$lname=$row3['lname'];
+$address=$row3['address'];
+$contact=$row3['contact'];
+$picture=$row3['picture'];
+$gender=$row3['gender'];
+}
+?>
+<table width="398" border="0" align="center" cellpadding="0">
+  <tr>
+    <td height="26" colspan="2">Your Profile Information </td>
+	<td><div align="right"><a href="index.php">logout</a></div></td>
+  </tr>
+  <tr>
+    <td width="129" rowspan="5"><img src="<?php echo $picture ?>" width="129" height="129" alt="no image found"/></td>
+    <td width="82" valign="top"><div align="left">FirstName:</div></td>
+    <td width="165" valign="top"><?php echo $fname ?></td>
+  </tr>
+  <tr>
+    <td valign="top"><div align="left">LastName:</div></td>
+    <td valign="top"><?php echo $lname ?></td>
+  </tr>
+</table>
+<p align="center"><a href="index.php"></a></p>
+    </body>
+    
+    </html>
+    
