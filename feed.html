@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet"href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+ <style>
+ h1{
+        text-align: center;
+        font-size: 50px;
+        font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+        font-weight: bold;
+        color: white;
+        border: 5px solid white;
+        padding: 8px;
+        border-radius: 5px;
+        width:fit-content;
+       margin-left:620px;
+ }
+ body{
+    background-color: #4C6949;
+ }
+  .bar {
+        font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+            }
+     #logout {
+        font-size: 20px;
+        font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+        font-weight: bold;
+        color: white;
+        text-align: right;
+        margin-left: 800px;
+      
+    }
+ #fed {
+    margin-left:400px;
+    margin-right:400px;
+    text-align: center;
+    
+ }
+ b{
+    border: 2px solid white;
+    padding: 10px;
+    color:white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
+ iframe{
+    margin: 15px;
+ }
+input {
+    color: white;
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    border-radius: 25px;
+     border: 2px solid #cc0052;
+     background-color: #cc0052;
+    
+}
+</style> 
+<script>
+function change( el )
+{
+    if ( el.value === "Follow" )
+        el.value = "Following";
+    else
+        el.value = "Follow";
+}
+function change1( el )
+{
+    if ( el.value === "Repost" )
+        el.value = "Reposted";
+    else
+        el.value = "Repost";
+}
+
+w3includeHTML();
+</script>
+ <h1> FEED </h1>   
+ 
+ <div class="bar">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="file:///C:/Users/gwc/Desktop/musicfinder.html">
+                <img id="boat" alt="logo" src="boatlogo.jpg" height="35px" width= "60px"> </a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="file:///C:/Users/gwc/Desktop/homepage.html">SEARCH</a></li>
+            <li class="active" ><a href="file:///C:/Users/gwc/Desktop/feed.html">FEED</a></li>
+            <li><a href="file:///C:/Users/gwc/Desktop/popular.html">POPULAR</a></li> 
+            <li><a href="file:///C:/Users/gwc/Desktop/erica_uni.html">PROFILE</a></li> 
+            <li id="logout" ><a href="file:///C:/Users/gwc/Desktop/musicapp.html">LOGOUT</a></li>
+        </ul>
+    </div>
+    </nav>
+</div>
+<div w3-include-html="login.html"> </div>
+
+</head>
+
+<body>
+<center>
+<div id="fed">
+ <iframe src="https://embed.spotify.com/?uri=spotify:track:0qRZ9ydGdzeVk3S01pLGoJ" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Kinga Hope <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:39hnH8WdPmNT3Q3yzwC9Rg" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Erica Fong <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:7HytU9V8vMCUayply0lYBq" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Lauren Tankeh <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:7GWaGnbGZEg1Pquhr07cVz" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Lucy O'Haire <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:6Zu3kwt2qSoSZCmfDEIuNy" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Sam Star <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:50S4mpD9sR0ITKEfC0O2cb" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Erica Fong <input type="button" value="Follow" onclick="return change(this);" /><input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:5hc71nKsUgtwQ3z52KEKQk" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Erica Fong <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:6BbINUfGabVyiNFJpQXn3x" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Kinga Hope<input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:7HytU9V8vMCUayply0lYBq" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Lauren Tankeh <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:0Fe3WxeO6lZZxj7ytvbDUh" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Sam Star <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:0zO8ctW0UiuOefR87OeJOZ" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Erica Fong <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:6KFaHC9G178beAp7P0Vi5S" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Erica Fong <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:5ZkVrmcXpByn8ab9I44Cnj" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Sam Star <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+
+<iframe src="https://embed.spotify.com/?uri=spotify:track:3Dkvp3L4w0uJFYfIPa8E9H" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Erica Fong <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:40xhyfAPDoMtv494MfPevP" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br> <b> Erica Fong   <input type="button" value="Follow" onclick="return change(this);" />  <input type="button" value="Repost" onclick="return change1(this);" />
+</b> </br> 
+
+<iframe src="https://embed.spotify.com/?uri=spotify:track:6WLS56xiRrXjSm9RSdL3zD" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Kinga Hope <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:7py16W5fWYLFFS6BElKAjn" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:4sPmO7WMQUAf45kwMOtONw" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Sam Star <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+</br><b> Kinga Hope <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:6ZSO7kPn8IMJFymyticbJO" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Kinga Hope <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:3cpOqFZ30z5cUJUC9MYaar" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Kinga Hope <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:0QB71BDzh36guAExsTIgNO" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Kinga Hope <input type="button" value="Follow" onclick="return change(this);" /><input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:6K5xY7EabiBLjd2HuBQIak" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Lucy O'Haire <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:0p1HtkrNYxv0iDfEKwXSTp" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Kinga Hope <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+
+
+
+<iframe src="https://embed.spotify.com/?uri=spotify:track:6TaqooOXAEcijL6G1AWS2K" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Lauren Tankeh <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:6hj7rfEI1u8xIL60V1uUKt" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Lauren Tankeh <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+
+<iframe src="https://embed.spotify.com/?uri=spotify:track:6aGNg25mRJdqd318f9X6Wn" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Lauren Tankeh <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:12tUCBq7V9qCF8qGOLpcnu" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Lauren Tankeh <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:00i2HU7TEzzftShjRrDSEF" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Erica Fong <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:2PtBhfoPZ6VYtXkrE5FrCH" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Lauren Tankeh <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+
+<iframe src="https://embed.spotify.com/?uri=spotify:track:0tiLDOYgY2n3qLFvq7c1QZ" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Lauren Tankeh <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+
+<iframe src="https://embed.spotify.com/?uri=spotify:track:0jx8zY5JQsS4YEQcfkoc5C" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Lucy O'Haire <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:62vpWI1CHwFy7tMIcSStl8" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Lucy O'Haire <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:1fviEsiaU55IDr01HTbi1R" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Lucy O'Haire <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:6s3GEN8wK0OMzzzZbXj0fu" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Lucy O'Haire <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+
+
+<iframe src="https://embed.spotify.com/?uri=spotify:track:2zsa7Z6gCA5eBg0p9pbyLs" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Lucy O'Haire <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:3CgZCQyuyxHRMWB9BTwmni" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Lucy O'Haire <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:5wzuewBsK1GdViQK4uBraa" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Lauren Tankeh <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:4VrWlk8IQxevMvERoX08iC" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Sam Star <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+
+<iframe src="https://embed.spotify.com/?uri=spotify:track:6JH9yWhgbm0y9iAJhCslNc" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Sam Star <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:6TzJLISIitIzn1WtjDY0Op" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Sam Star <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+<iframe src="https://embed.spotify.com/?uri=spotify:track:0aersVHlGGXcHeRvHtuaSt" width="400" height="480" frameborder="0" allowtransparency="true"></iframe>
+</br><b> Sam Star <input type="button" value="Follow" onclick="return change(this);" /> <input type="button" value="Repost" onclick="return change1(this);" /></b> </br> <p>  </p>
+
+</div>
+</center>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet"href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <title> Your Profile </title>
+    <center><h1>PROFILE</h1></center>
+    
+    
+    <style>
+    h1{
+        text-align: center;
+        font-size: 50px;
+        font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+        font-weight: bold;
+        color: white;
+        border: 5px solid white;
+        padding: 8px;
+        border-radius: 5px;
+        width:fit-content;
+       
+    }
+    .bar {
+                font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+            }
+    body{
+        background-color: #716073;
+        }
+    #logout {
+        font-size: 20px;
+        font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+        font-weight: bold;
+        color: white;
+        text-align: right;
+        margin-left: 800px;
+      
+    }
+    </style>
+    <div class="bar">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="file:///C:/Users/gwc/Desktop/musicfinder.html">
+                <img id="boat" alt="logo" src="boatlogo.jpg" height="35px" width= "60px"> </a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="file:///C:/Users/gwc/Desktop/homepage.html">SEARCH</a></li>
+            <li><a href="file:///C:/Users/gwc/Desktop/feed.html">FEED</a></li>
+            <li><a href="file:///C:/Users/gwc/Desktop/popular.html">POPULAR</a></li> 
+            <li class="active"><a href="file:///C:/Users/gwc/Desktop/profile.html">PROFILE</a></li> 
+            <li id="logout" ><a href="file:///C:/Users/gwc/Desktop/musicapp.html">LOGOUT</a></li>
+        </ul>
+    </div>
+    </nav>
+</div>
+
+    </head>
+    
+    <body>
+    
+    <form name="reg" action="code_exec.php" onsubmit="return validateForm()" method="post">
+<table width="274" border="0" align="center" cellpadding="2" cellspacing="0">
+  <tr>
+    <td colspan="2">
+		<div align="center">
+		  <?php 
+		$remarks=$_GET['remarks'];
+		if ($remarks==null and $remarks=="")
+		{
+		echo 'Register Here';
+		}
+		if ($remarks=='success')
+		{
+		echo 'Registration Success';
+		}
+		?>	
+	    </div></td>
+  </tr>
+  <tr>
+    <td width="95"><div align="right">First Name:</div></td>
+    <td width="171"><input type="text" name="fname" /></td>
+  </tr>
+  <tr>
+    <td><div align="right">Last Name:</div></td>
+    <td><input type="text" name="lname" /></td>
+  </tr>
+ <tr>
+    <td><div align="right">Username:</div></td>
+    <td><input type="text" name="username" /></td>
+  </tr>
+ <tr>
+    <td><div align="right">Password:</div></td>
+    <td><input type="text" name="password" /></td>
+  </tr>
+  <tr>
+    <td><div align="right"></div></td>
+    <td><input name="submit" type="submit" value="Submit" /></td>
+  </tr>
+</table>
+</form>
+	
+    <?php
+$mysql_hostname = "localhost";
+$mysql_user = "root";
+$mysql_password = "";
+$mysql_database = "registration";
+$prefix = "";
+$bd = mysql_connect($mysql_hostname, $mysql_user, $mysql_password) or die("Could not connect database");
+mysql_select_db($mysql_database, $bd) or die("Could not select database");
+
+require_once('connection.php');
+$id=$_SESSION['SESS_MEMBER_ID'];
+$result3 = mysql_query("SELECT * FROM member where mem_id='$id'");
+while($row3 = mysql_fetch_array($result3))
+{ 
+$fname=$row3['fname'];
+$lname=$row3['lname'];
+$address=$row3['address'];
+$contact=$row3['contact'];
+$picture=$row3['picture'];
+$gender=$row3['gender'];
+}
+?>
+<table width="398" border="0" align="center" cellpadding="0">
+  <tr>
+    <td height="26" colspan="2">Your Profile Information </td>
+  </tr>
+  <tr>
+    <td width="129" rowspan="5"><img src="<?php echo $picture ?>" width="129" height="129" alt="no image found"/></td>
+    <td width="82" valign="top"><div align="left">FirstName:</div></td>
+    <td width="165" valign="top"><?php echo $fname ?></td>
+  </tr>
+  <tr>
+    <td valign="top"><div align="left">LastName:</div></td>
+    <td valign="top"><?php echo $lname ?></td>
+  </tr>
+</table>
+<p align="center"><a href="index.php"></a></p>
+    </body>
+    
+    </html>
+    

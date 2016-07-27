@@ -1,0 +1,134 @@
+<html>
+<head id = "top">
+ <title>Erica Fong</title>
+     <style>
+     
+        body {
+            background-image:url("http://wallpapercave.com/wp/AEXcIND.png");
+        }
+        
+        #title {
+            text-align:center;
+            color: #697097;
+            font-family : "Lucida Sans Unicode", "Lucida Grande", sans-serif   
+        }
+        #gwc {
+            text-align:center;
+            color:	#65A157;
+           font-family : "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+           
+        }
+        ul{
+            top:0;
+            list-style-type: none;
+            background-color:#8FBC8F;
+            font-family : "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+            border:5px double #7EA57E;
+            
+        }
+        #list1 {
+        display:inline;
+        padding: 20px;
+        }
+        #projects {
+            border-top-style: double;
+            border-top-color: rgb(0,0,0);
+            border-top-width: 10px;
+            font-family : "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+            font-weight: bold;
+            
+        }
+        #aboutme {
+            font-family : "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+            font-weight: bold;
+            text-indent: 50px;
+            background-color: #D7D7FC;
+            
+        }
+        p {
+            text-indent:20px;
+            font-family: Georgia, Times, "Times New Roman", serif;
+            color: #4E4E57;
+        }
+        #boutme{
+            padding-bottom: 40px;
+            padding-left: 50px;
+        }
+        
+     </style>
+    <script>
+       
+        function changeImg() {
+            var change = document.getElementById("og");
+             if (change.src ="me.jpg"){
+                
+                change.src = "output.jpg";
+                
+            }
+            else  {
+                change.src = "me.jpg";
+            }
+           
+        } 
+
+        function big (x) {
+            x.style.height= "500px";
+            x.style.width = "550px";
+        }
+        function normal (x) {
+            x.style.height = "300px";
+            x.style.width = "350px";
+        }
+    </script>
+     
+  <h1 id="title">Erica Fong</h1>
+  <h2 id="gwc">Girls Who Code </h2>
+    <br/>
+<head>
+
+<body>
+     <ul id="pagelist">
+        <li id="list1"> <a href = "#projects" > Projects </a> </li>
+        <li id="list1"> <a href = "#aboutme"> About Me </a> </li>
+   
+     </ul>
+ 
+  <div id= "projects">
+  
+        <h1 id= "proj"> Projects </h1>
+            <a href = "me.py"> Obama-fy Project. </a> <p>This project allows you to upload a picture and have it "obama-fied." </p>
+            <img src = "obamacode.png" onmouseover= "big(this)" onmouseout= "normal(this)" alt="Obama-fy code">
+            
+           <img id ="og" src = "me.jpg" height= "150px"  width = "150px" alt="uneditied picture">
+           
+            <button id="btn" onclick ="changeImg()"> Click to change </button>
+            
+           
+                <br/>
+            <a href = "city2.py"> City scroller </a> <p> A continuous background of city buildings. </p>
+            <img src = "cityscrollshot.png" onmouseover="big(this)" onmouseout="normal(this)" alt="City Scroller">
+                <br/>
+            <a href = "runner_game.py"> Runner game.</a> <p>User controls with the mouse, tries to collect as many "good sprites" (purple) as they can and avoid "bad spirtes" (red). </p>
+            <img src = "gamescreennshot.png" onmouseover="big(this)" onmouseout="normal(this)" alt="Runner Game">
+                <br/>
+             <p> PIG. A dice game, players try to get to 100 points first. Make using Scratch.</p>
+            <img src = "pigshot.jpg" onmouseover="big(this)" onmouseout="normal(this)" alt="PIG">
+            <br/>
+        <u1 id="other"> Other Projects: </u1>
+            <li><a href = "shapes.py"> Star Drawer (uses Python Turtle) </a> </li>
+            <li><a href = "snow2.py"> Falling Snow (uses Pygame) </a> </li>
+    
+  </div>
+  
+  <div id = "aboutme">
+        
+        <h1 id="me"> About Me: </h1>
+        <p id= "boutme"> Hi I'm Erica. I am an upcoming senior at Lowell High School. I'm from San Francisco. I love burritos and pho. 
+        <br> I like to fold paper cranes, it's relaxing. 
+        <br></p>
+        
+  </div>
+   
+  
+</body>
+ </html>
